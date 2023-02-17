@@ -7,13 +7,12 @@
  */
 int main(void)
 {
-	char ch[] = "0123456789";
-	int i = 0;
+	int i = '0';
 
-	while (ch[i] != '\0')
+	while (i <= '9')
 	{
-		putchar(ch[i]);
-		if (ch[i+1] != '\0')
+		putchar(i);
+		if (i != '9')
 			putchar(',');
 		i++;
 	}
