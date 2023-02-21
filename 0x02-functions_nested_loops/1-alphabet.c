@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -8,14 +9,16 @@
 
 void print_alphabet(void);
 
-void print_alphabet(void){
+void print_alphabet(void)
+{
+	int i;
 
-	for (int i = 'a'; i <= 'z'; i++)
+	for (i = 'a'; i <= 'z'; i++)
 		putchar(i);
 }
 
 int main(void)
 {
-    print_alphabet();
-    return (0);
+print_alphabet();
+return (0);
 }
