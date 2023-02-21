@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,9 +14,9 @@ int main(void)
 
 	while (ch[i] != '\0')
 	{
-		_putchar(ch[i]);
+		putchar(ch[i]);
 		i++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
