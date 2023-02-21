@@ -9,14 +9,14 @@
  */
 int main(void)
 {
-	char ch[] = "_putchar";
+	char ch[] = "_putchar\n";
 	int i;
 
-	while (ch[i] != '\0')
+	while (ch[i])
 	{
 		putchar(ch[i]);
 		i++;
 	}
-	putchar('\n');
+
 	return (0);
 }
