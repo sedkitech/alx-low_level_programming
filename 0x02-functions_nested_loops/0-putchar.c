@@ -14,7 +14,7 @@ int main(void)
 
 	while (ch[i])
 	{
-		putchar(ch[i]);
+		_putchar(ch[i]);
 		i++;
 	}
 
