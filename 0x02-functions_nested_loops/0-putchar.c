@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include "main.h"
 
 /**
@@ -14,9 +13,9 @@ int main(void)
 
 	while (ch[i] != '\0')
 	{
-		putchar(ch[i]);
+		_putchar(ch[i]);
 		i++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
