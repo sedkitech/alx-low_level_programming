@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 0 ; i <= 8; i++)
 	{
-		putchar(ch[i]);
+		_putchar(ch[i]);
 	}
 
 	return (0);
