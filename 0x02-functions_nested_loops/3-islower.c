@@ -14,11 +14,11 @@ int _islower(int c)
 	int result;
 	int i;
 
-	result = 1;
-	for (i = 'A'; i <= 'Z'; i++)
+	result = 0;
+	for (i = 'a'; i <= 'z'; i++)
 	{
 		if (c == i)
-			result = 0;
+			result = 1;
 	}
 	return (result);
 }
