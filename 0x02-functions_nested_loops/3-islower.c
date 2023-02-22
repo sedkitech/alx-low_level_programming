@@ -2,7 +2,7 @@
 
 /**
  * _islower - Entry point
- * @c: character to see if islower
+ * @c: int to see if islower
  *
  * Description: check for lower case character
  *
@@ -14,11 +14,11 @@ int _islower(int c)
 	int result;
 	int i;
 
-	result = '1';
+	result = 1;
 	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (c == i)
-			result = '0';
+			result = 0;
 	}
 	return (result);
 }
