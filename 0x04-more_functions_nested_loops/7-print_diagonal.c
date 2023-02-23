@@ -2,13 +2,13 @@
 
 /**
  * print_diagonal - draw diagonal line
- *@n: number of times the character \ should be printed
+ *@n: number of times the character should be printed
  * Return: always 0
  */
 
 void print_diagonal(int n)
 {
-	int i = 0;
+	int i;
 	int j = 0;
 
 	if (n <= 0)
