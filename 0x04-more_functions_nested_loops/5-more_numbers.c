@@ -9,19 +9,16 @@ void more_numbers(void)
 {
 	int i;
 	int j = 0;
+	char c[] = "01234567891011121314";
 
-	while (j <= 9)
+	for (i = 0; i <= 9; i++)
 	{
-		for (i = '0'; i <= '9'; i++)
+		while (c[j] != '\0')
 		{
-			_putchar(i);
-		}
-		for (i = '0'; i <= '4'; i++)
-		{
-			_putchar('1');
-			_putchar(i);
+			_putchar(c[j]);
+			j++;
 		}
 		_putchar('\n');
-		j++;
+		j = 0;
 	}
 }
