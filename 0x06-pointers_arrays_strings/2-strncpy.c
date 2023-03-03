@@ -17,10 +17,10 @@ char *_strncpy(char *dest, char *src, int n)
 
 		for (i = 0; i < n; ++i)
 		{
-			if (n <= len_src)
-				dest[len] = src[i];
+			if (i <= len_src)
+				dest[i] = src[i];
 			else
-				dest[len] = ' ';
+				dest[len] = '\0';
 		len++;
 		}
 	dest[len] = '\0';
