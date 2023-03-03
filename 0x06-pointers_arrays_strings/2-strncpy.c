@@ -15,28 +15,14 @@ char *_strncpy(char *dest, char *src, int n)
 	int i;
 	int len_src = strlen(src);
 
-	if (n <= len_src)
-	{
 		for (i = 0; i < n; ++i)
 		{
-		dest[len] = src[i];
+			if (n <= len_src)
+				dest[len] = src[i];
+			else
+				dest[len] = ' ';
 		len++;
 		}
-	}
-	else
-	{
-		for (i = 0; i < len_src; ++i)
-		{
-		dest[len] = src[i];
-		len++;
-		}
-
-		for (; i < n ; ++i)
-		{
-		dest[len] = ' ';
-		len++;
-		}
-	}
 	dest[len] = '\0';
 	return (dest);
 }
