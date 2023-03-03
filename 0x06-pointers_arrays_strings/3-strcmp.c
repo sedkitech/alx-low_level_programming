@@ -27,20 +27,20 @@ int _strcmp(char *s1, char *s2)
 
 	for (i = 0 ; i < len; i++)
 	{
-			if (s1[i] == s2[i])
-			{
-				res = 0;
-			}
-			else if (s1[i] > s2[i])
-			{
-				res = s1[i] - s2[i];
-				break;
-			}
-			else
-			{
-				res = s1[i] - s2[i];
-				break;
-			}
+		if (s1[i] == s2[i])
+		{
+			res = 0;
+		}
+		else if (s1[i] > s2[i])
+		{
+			res = s1[i] - s2[i];
+			break;
+		}
+		else
+		{
+			res = s1[i] - s2[i];
+			break;
+		}
 	}
 	return (res);
 }
