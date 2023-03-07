@@ -11,23 +11,31 @@
 char *_strchr(char *s, char c)
 {
 	int i;
-	int len = strlen(s) - 1;
+	int len = strlen(s);
 	int start;
-	char ch[] = "";
+	int len_ch;
 
 	for (i = 0; i < len; i++)
 	{
 		if (s[i] == c)
 		{
 			start = i;
+			len_ch = len - start;
 			break;
 		}
-		else
-			return (NULL);
 	}
-	for (i = start; i < len; i++)
+
+	char ch[] = "";
+
+	for (i = start; i <= len; i++)
 	{
 		ch[i] = s[i];
 	}
+	s = "";
+	for (i = 0; i < len_ch; i++)
+	{
+		s[i] = ch[i];
+	}
+
 	return (ch);
 }
