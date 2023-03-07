@@ -29,5 +29,5 @@ char *_strchr(char *s, char c)
 	{
 		ch[i] = s[i];
 	}
-	return ch;
+	return (ch);
 }
