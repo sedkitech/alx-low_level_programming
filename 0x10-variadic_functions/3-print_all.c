@@ -1,12 +1,10 @@
 #include "variadic_functions.h"
-
 /**
  * print_all - prints anything
  * @format: type of arguments passed
  * @...: arguments
  * Return: nothing
  */
-
 void print_all(const char * const format, ...)
 {
 	va_list args;
@@ -14,6 +12,11 @@ void print_all(const char * const format, ...)
 	char *value;
 
 	va_start(args, format);
+	while (!format)
+	{
+		putchar('\n');
+		return;
+	}
 	while (format[i] != '\0')
 	{
 	switch (format[i])
@@ -36,13 +39,9 @@ void print_all(const char * const format, ...)
 		default:
 			break;
 	}
-
-	if ((format[i] == 'i' || format[i] == 'c' ||
-format[i] == 'f' || format[i] == 's')
-			&& format[i + 1] != '\0')
-	{
+	if ((format[i] == 'i' || format[i] == 'c' || format[i] == 'f' ||
+		format[i] == 's') && format[i + 1] != '\0')
 		printf(", ");
-	}
 
 	i++;
 	}
