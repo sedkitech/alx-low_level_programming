@@ -8,7 +8,7 @@
 
 size_t print_list(const list_t *h)
 {
-	size_t sum = 0;
+	unsigned int sum = 0;
 	const list_t *node = h;
 
 	while (node)
@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%ld] %s\n", strlen(node->str), node->str);
+			printf("[%d] %s\n", node->len, node->str);
 		}
 		node = node->next;
 	}
