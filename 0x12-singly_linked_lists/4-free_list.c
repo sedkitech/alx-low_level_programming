@@ -1,17 +1,18 @@
 #include "lists.h"
+
 /**
  * free_list - frees a list
- * @head: head
+ * @head: pointer to struct
  */
+
 void free_list(list_t *head)
 {
-	list_t *temp;
+	list_t *node;
 
-	while (head != NULL)
+	while (head)
 	{
-		temp = head->next;
-		free(head->str);
+		node = head->next;
 		free(head);
-		head = temp;
+		head = node;
 	}
 }
