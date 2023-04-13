@@ -11,7 +11,7 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int hint = 0;
 
-	if (index == NULL && n == NULL)
+	if (!index && !n)
 		return (-1);
 
 	if (index == 0)
