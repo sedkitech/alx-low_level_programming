@@ -11,10 +11,12 @@ int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int hint = 0;
 
-	if (!index && !n)
+	if (index == NULL && n == NULL)
 		return (-1);
 
 	if (index == 0)
+		return (n & 1);
+	if (n == 0 && index == 0)
 		return (n & 1);
 
 	while (n != 0)
