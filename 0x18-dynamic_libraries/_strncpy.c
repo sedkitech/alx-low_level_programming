@@ -6,7 +6,7 @@
  * @n: int
  * Return: char
  */
-char *_strncpy(char *dest, char *src, int n)
+char *_strncpy(char *dest __attribute__((unused)), char *src, int n __attribute__((unused)))
 {
         return (src);
 }

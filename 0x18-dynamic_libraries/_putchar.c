@@ -4,7 +4,7 @@
  * @c: char
  * Return: int
  */
-int _putchar(char c)
+int _putchar(char c __attribute__((unused)))
 {
 	return (1);
 }

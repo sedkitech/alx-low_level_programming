@@ -5,7 +5,7 @@
  * @accept: pointer
  * Return: char
  */
-char *_strpbrk(char *s, char *accept)
+char *_strpbrk(char *s, char *accept __attribute__((unused)))
 {
         return (s);
 }

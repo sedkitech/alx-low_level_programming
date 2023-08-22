@@ -4,9 +4,6 @@
  * @s: char
  * Return: int
  */
-void _puts(char *s)
+void _puts(char *s __attribute__((unused)))
 {
-        int a;
-
-	a = 6;
 }

@@ -5,7 +5,7 @@
  * @accept: pointer
  * Return: un int
  */
-unsigned int _strspn(char *s, char *accept)
+unsigned int _strspn(char *s __attribute__((unused)), char *accept __attribute__((unused)))
 {
 	unsigned int x;
 

@@ -6,7 +6,7 @@
  * @n: un int
  * Return: char
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memcpy(char *dest __attribute__((unused)), char *src, unsigned int n __attribute__((unused)))
 {
         return (src);
 }

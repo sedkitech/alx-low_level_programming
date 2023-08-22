@@ -4,7 +4,7 @@
  * @n: int
  * Return: int
  */
-int _abs(int n)
+int _abs(int n __attribute__((unused)))
 {
         return (1);
 }
